@@ -1,0 +1,205 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#ecf0f1',
+    paddingTop: 50,
+  },
+  header: {
+    backgroundColor: '#2c3e50',
+    padding: 20,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+    elevation: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: 'white',
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  stats: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  statsText: {
+    fontSize: 14,
+    color: '#bdc3c7',
+    fontWeight: '600',
+  },
+  searchContainer: {
+    padding: 15,
+    backgroundColor: 'white',
+    marginHorizontal: 15,
+    marginTop: 15,
+    borderRadius: 10,
+    elevation: 2,
+  },
+  searchInput: {
+    fontSize: 16,
+    color: '#2c3e50',
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    padding: 15,
+    marginHorizontal: 15,
+    marginTop: 10,
+  },
+  textInput: {
+    flex: 1,
+    backgroundColor: 'white',
+    padding: 15,
+    borderRadius: 10,
+    fontSize: 16,
+    marginRight: 10,
+    elevation: 2,
+    color: '#2c3e50',
+  },
+  addButton: {
+    backgroundColor: '#27ae60',
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    justifyContent: 'center',
+    alignItems: 'center',
+    elevation: 2,
+  },
+  addButtonText: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  taskList: {
+    flex: 1,
+    marginHorizontal: 15,
+    marginTop: 10,
+  },
+  taskItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    padding: 15,
+    borderRadius: 10,
+    marginBottom: 10,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.2,
+    shadowRadius: 1.41,
+  },
+  taskCompleted: {
+    backgroundColor: '#f8f9fa',
+    opacity: 0.8,
+  },
+  checkbox: {
+    marginRight: 12,
+  },
+  checkboxInner: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    borderWidth: 2,
+    borderColor: '#3498db',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  checkboxChecked: {
+    backgroundColor: '#3498db',
+    borderColor: '#3498db',
+  },
+  checkmark: {
+    color: 'white',
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
+  taskContent: {
+    flex: 1,
+  },
+  taskText: {
+    fontSize: 16,
+    color: '#2c3e50',
+    fontWeight: '500',
+  },
+  taskTextCompleted: {
+    textDecorationLine: 'line-through',
+    color: '#95a5a6',
+  },
+  editInput: {
+    fontSize: 16,
+    color: '#2c3e50',
+    borderBottomWidth: 1,
+    borderBottomColor: '#3498db',
+    paddingVertical: 2,
+  },
+  taskActions: {
+    flexDirection: 'row',
+  },
+  actionButton: {
+    padding: 8,
+    marginLeft: 5,
+    borderRadius: 5,
+    backgroundColor: '#f8f9fa',
+  },
+  actionText: {
+    fontSize: 14,
+    color: '#2c3e50',
+  },
+  emptyText: {
+    textAlign: 'center',
+    fontSize: 16,
+    color: '#7f8c8d',
+    marginTop: 50,
+    fontStyle: 'italic',
+  },
+  controls: {
+    backgroundColor: 'white',
+    padding: 15,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    elevation: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: -2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+  filterButtons: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginBottom: 15,
+  },
+  filterButton: {
+    paddingVertical: 8,
+    paddingHorizontal: 20,
+    borderRadius: 20,
+    backgroundColor: '#ecf0f1',
+  },
+  filterButtonActive: {
+    backgroundColor: '#3498db',
+  },
+  filterButtonText: {
+    color: '#7f8c8d',
+    fontWeight: '600',
+  },
+  filterButtonTextActive: {
+    color: 'white',
+  },
+  clearButton: {
+    backgroundColor: '#e74c3c',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  clearButtonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+});
